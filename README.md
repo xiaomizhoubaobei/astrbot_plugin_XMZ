@@ -1,8 +1,25 @@
-# helloworld
+## 功能概述
 
-AstrBot 插件模板
+该插件提供了宫群建交管理功能，支持以下命令：
 
-A template plugin for AstrBot plugin feature
+- `/add_relation [群名称] [群号] [对方建交官] [我方建交官] [建交书截图(可选)]`：添加宫群外交关系。
+- `/list_relations [页码]`：分页列出所有建交国名称及序号。
+- `/relation_detail [序号|建交国名称]`：查询详细建交信息。
+- `/edit_relation [序号|建交国名称] [群名称] [群号] [对方建交官] [我方建交官] [建交书截图(可选)]`：修改建交关系。
+- `/delete_relation [序号|建交国名称]`：删除建交关系。
+- `qun list [页码]`：分页列出所有群列表。
+- `list [页码]`：在当前群下列出建交国。
+
+## 使用示例
+
+1. 添加建交关系：
+   `/add_relation 群A 12345 张三 李四`
+
+2. 列出建交关系：
+   `/list_relations 1`
+
+3. 查询建交详情：
+   `/relation_detail 群A`
 
 # 支持
 
