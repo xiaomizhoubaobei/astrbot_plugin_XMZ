@@ -9,7 +9,8 @@ from datetime import datetime
 class BorrowManager(Star):
     def __init__(self, context: Context):
         super().__init__(context)
-        self.data_file = os.path.join(self.context.data_dir, "borrow_records.json")
+        # 使用 context.get_data_dir() 获取数据目录
+        self.data_file = os.path.join(context.get_data_dir(), "borrow_records.json")
         self.borrow_records = self._load_records()
 
     def _load_records(self):
