@@ -1,5 +1,5 @@
-name: palace_diplomacy # 这是你的插件的唯一识别名。
-desc: 宫群建交管理插件，用于管理宫群之间的外交关系。 # 插件简短描述
-version: v1.0 # 插件版本号。格式：v1.1.1 或者 v1.1
-author: 祁筱欣# 作者
-repo: https://github.com/YourName/palace_diplomacy # 插件的仓库地址
+name: borrow_manager # 这是你的插件的唯一识别名。
+desc: 借钱记账插件（带利息计算）。 # 插件简短描述
+version: v1.1 # 插件版本号。格式：v1.1.1 或者 v1.1
+author: 祁筱欣 # 作者 (请替换为你的名字)
+repo: https://github.com/xiaomizhoubaobei/astrbot_plugin_XMZ # 插件的仓库地址 (请替换为你的仓库地址)
