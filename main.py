@@ -9,15 +9,13 @@ from astrbot.api import logger
 class BorrowManager(Star):
     def __init__(self, context):
         super().__init__(context)
-        # 获取当前文件的绝对路径
-        current_file = os.path.abspath(__file__)
         # 获取当前文件所在的目录
-        current_dir = os.path.dirname(current_file)
-        # 获取当前目录的上级目录
-        parent_dir = os.path.dirname(current_dir)
-        # 构建数据目录路径
-        self.data_dir = os.path.join(parent_dir, "plugins_data", "borrow_manager")
-        os.makedirs(self.data_dir, exist_ok=True)  # 确保目录存在
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        # 构建 data 文件夹的路径
+        self.data_dir = os.path.join(current_dir, "data")
+        # 确保 data 文件夹存在
+        os.makedirs(self.data_dir, exist_ok=True)
+        # 构建数据文件的路径
         self.data_file = os.path.join(self.data_dir, "borrow_records.json")
         self.borrow_records = self._load_records()
 
