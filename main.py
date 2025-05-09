@@ -8,7 +8,6 @@ from astrbot.api import logger
 @register("borrow_manager", "YourName", "借钱记账插件（带利息计算）", "1.0.0", "https://github.com/yourrepo")
 class BorrowManager(Star):
     def __init__(self, context):
-        super().__init__(context)
         # 获取当前文件所在的目录
         current_dir = os.path.dirname(os.path.abspath(__file__))
         # 构建 data 文件夹的路径
